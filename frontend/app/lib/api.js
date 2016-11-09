@@ -45,6 +45,10 @@ class API {
     return this.send('get', `/api/${team}/apps`);
   }
 
+  app(team, name) {
+    return this.send('get', `/api/${team}/apps/${name}`);
+  }
+
   devices(team) {
     return this.send('get', `/api/${team}/devices`);
   }
