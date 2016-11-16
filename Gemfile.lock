@@ -45,11 +45,12 @@ GEM
     byebug (9.0.6)
     cancancan (1.15.0)
     choice (0.2.0)
-    codeclimate-test-reporter (0.6.0)
-      simplecov (>= 0.7.1, < 1.0.0)
+    codeclimate-test-reporter (1.0.3)
+      simplecov
     coderay (1.1.1)
     concurrent-ruby (1.0.2)
-    connection_pool (2.2.0)
+    connection_pool (2.2.1)
+    database_cleaner (1.5.3)
     devise (4.2.0)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -194,7 +195,7 @@ GEM
     ruby_dep (1.5.0)
     rubyzip (1.2.0)
     shellany (0.0.1)
-    sidekiq (4.2.3)
+    sidekiq (4.2.6)
       concurrent-ruby (~> 1.0)
       connection_pool (~> 2.2, >= 2.2.0)
       rack-protection (>= 1.5.0)
@@ -241,6 +242,7 @@ DEPENDENCIES
   byebug
   cancancan (~> 1.10)
   codeclimate-test-reporter
+  database_cleaner
   devise
   devise_token_auth
   factory_girl_rails (~> 4.0)
